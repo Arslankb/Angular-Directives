@@ -1,0 +1,13 @@
+<!-- Structural Directives.... -->
+
+<!-- 1. NgIf Directives -->
+
+<div>
+    <h2>This is NgIf Example</h2>
+    <button class="btn btn-success" (click)="onClick()">Create Block</button>
+    <p *ngIf="isValid; else esleblock" >This is the block of structural directives.</p>
+    
+  </div>
+  <ng-template  #esleblock>
+    <p>No Block has been created</p>
+  </ng-template>
